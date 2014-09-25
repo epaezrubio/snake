@@ -1,0 +1,27 @@
+{
+  "name": "snake",
+  "version": "0.0.1",
+  "authors": [
+    "Author name<email@somedomain.com>"
+  ],
+  "description": "A sample description",
+  "main": "app/index.html",
+  "keywords": [
+    "A, sample, description"
+  ],
+  "license": "MIT",
+  "homepage": "somedomain.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "modernizr": "*",
+    "lodash": "~2.4.1"
+  }
+}

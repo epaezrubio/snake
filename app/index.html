@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>snake</title>
+    <meta name="description" content="A sample description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<div id="canvas-wrapper">
+    <div>
+        <div>
+            <div id="canvas-placeholder">
+                <canvas id="canvas" width="500" height="500"></canvas>
+                <div id="loading-menu">
+                    <a href="#" id="play">Start</a>
+                </div>
+                <div id="gameover-menu">
+                    <div id="gameover-menu-wrapper">
+                        <div id="scores">
+                            <div>
+                                Score: <span id="score"></span>
+                            </div>
+                            <div>
+                                Distance covered: <span id="distance-covered"></span> m.
+                            </div>
+                            <div>
+                                Time played: <span id="time-played"></span> s.
+                            </div>
+                            <div>
+                                God mode: <span id="godmode-time"></span> s.
+                            </div>
+                        </div>
+                        <a href="#" id="restart">Start again</a>
+                    </div>
+                </div>
+            </div>
+            <div id="game-settings">
+                <div>
+                    Dificulty:
+                    <br/>
+                    <input type="radio" name="dificulty" value="0"/> Hard
+                    <input type="radio" name="dificulty" value="1" checked="checked"/> Medium
+                    <input type="radio" name="dificulty" value="2"/> Easy
+                    <input type="radio" name="dificulty" value="3"/> Custom
+                </div>
+                <div id="custom-settings">
+                    <br/>
+                    Speed: <input type="range" min="1" max="10" name="snakeSpeed" step="1"/>
+                    <br/>
+                    Turn ability: <input type="range" min="0.04" max="0.14" name="snakeTurnAbility" step="0.01"/>
+                    <br/>
+                    Number of apples: <input type="range" min="1" max="10" name="totalApples" step="1"/>
+                    <br/>
+                    Golden apples frequency: <input type="range" min="1" max="10" name="goldenApples" step="1"/>
+                    <br/>
+                    Apple grow rate: <input type="range" min="1" max="10" name="appleGrowRate" step="1"/>
+                    <br/>
+                    <input type="checkbox" name="worm" value="on"/> I am a real worm
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/lodash/dist/lodash.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/scripts.js -->
+<script src="scripts/game/core.js"></script>
+
+<script src="scripts/entities/pobject.js"></script>
+<script src="scripts/entities/apple.js"></script>
+<script src="scripts/entities/snakepart.js"></script>
+<script src="scripts/entities/snake.js"></script>
+<script src="scripts/entities/map.js"></script>
+
+<script src="scripts/main.js"></script>
+
+<script src="scripts/controls/standard.js"></script>
+
+<!-- endbuild -->
+<!-- TODO: Google Analytics -->
+</body>
+</html>

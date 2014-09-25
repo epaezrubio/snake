@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*@package: snake*/
+
+/*@author: Author name*/
+/*@www: somedomain.com*/
+
+/*@copyright: COPYRIGHT 6 Author name*/
+/*@license: MIT*/
+
+/*=============================================================================*/
+/*Filename: main.css*/
+/*=============================================================================*/
+/*This file is responsible for all styles on the snake app.*/
+/*--------------------------------------------------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a {
+    color: white;
+}
+
+body, html {
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #007fff;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+#canvas-wrapper {
+    margin: 20px auto 0;
+    overflow: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    width: 1000px;
+}
+
+#canvas {
+    border: 2px solid black;
+    width: 500px;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+#game-settings {
+    float: left;
+    width: 400px;
+    padding-left: 20px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+    width: 500px;
+    display: block;
+    text-align: center;
+}
+
+#canvas-placeholder {
+    position:relative;
+}
+
+#loading-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#gameover-menu {
+    position: absolute;
+    color: #007FFF;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 500px;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+#gameover-menu-wrapper {
+    margin: 80px auto 0;
+    width: 300px;
+}
+
+#restart {
+    display: block;
+    text-align: center;
+}
+
+#scores {
+    background: rgba(255,255,255,0.8);
+    border-radius: 30px;
+    border: rgba(0,0,0,0.5);
+    padding: 30px;
+}
+
+#play {
+    position: absolute;
+    top: 205px;
+    left: 228px;
+    font-size: 14pt;
+    display: none;
+}
